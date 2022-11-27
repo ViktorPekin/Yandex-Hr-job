@@ -1,5 +1,12 @@
 # Getting Started with Create React App
 
+__Тестовый коммит__
+* переключился в dev
+* создал ветку и переключился на неё
+* делаю коммит
+* пушу
+* открываю пул реквест
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
