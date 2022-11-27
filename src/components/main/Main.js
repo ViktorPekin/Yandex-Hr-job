@@ -4,6 +4,7 @@ import HowToBecome from './howToBecome/howToBecome'
 import Advantages from './advantages/Advantages'
 import ProductIntroduction from './product-introduction/ProductIntroduction'
 import NoWork from './no-work/NoWork'
+import Feedback from './feedback/Feedback'
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
       <ProductIntroduction />
       <Advantages />
       <NoWork />
+      <Feedback />
     </main>
   )
 }
