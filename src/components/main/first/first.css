@@ -4,15 +4,15 @@
   height: 700px;
   width: 100%;
   font-style: normal;
-  background-color: transparent;
   color: #000000;
+  background-color: transparent;
   overflow: hidden;
 }
 
 .first__title {
-  position: absolute;
   margin: 0;
   padding: 0;
+  position: absolute;
   top: 138px;
   left: 108px;
   z-index: 1;
@@ -40,15 +40,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
   margin-top: 138px;
   margin-left: 108px;
+  width: 286px;
+  height: 60px;
   border-radius: 120px;
   background: #373737;
   color: #FFF;
   backdrop-filter: blur(6px);
-  width: 286px;
-  height: 60px;
 }
 
 .first__button:hover {
