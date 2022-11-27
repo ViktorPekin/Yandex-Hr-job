@@ -1,0 +1,140 @@
+.first {
+  position: relative;
+  padding-top: 138px;
+  height: 700px;
+  width: 100%;
+  font-style: normal;
+  background-color: transparent;
+  color: #000000;
+  overflow: hidden;
+}
+
+.first__title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 138px;
+  left: 108px;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 82px;
+}
+
+.first__text {
+  margin: 0;
+  padding: 0;
+  margin-top: 101px;
+  margin-left: 108px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.first__button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin-top: 138px;
+  margin-left: 108px;
+  border-radius: 120px;
+  background: #373737;
+  color: #FFF;
+  backdrop-filter: blur(6px);
+  width: 286px;
+  height: 60px;
+}
+
+.first__button:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.first__bable {
+  position: absolute;
+  left: 55%;
+  top: -200px;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 128px;
+  width: 50px;
+  background: #C4C4C4;
+  border-radius: 90px;
+  animation-name: transfer;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.first__bable:hover { /* если включить opacity в кейфрейме, hover не работает */
+  opacity: 0.8;
+}
+
+
+.first__bable_pozition_one {
+  width: 332px;
+  animation-delay: 2s;
+}
+
+.first__bable_pozition_two {
+  width: 286px;
+  animation-delay: 4s;
+}
+
+.first__bable_pozition_three {
+  width: 332px;
+  animation-delay: 6s;
+}
+
+.first__bable_pozition_four {
+  width: 286px;
+  animation-delay: 8s;
+}
+
+.first__bable_pozition_five {
+  width: 332px;
+  animation-delay: 10s;
+}
+
+@keyframes transfer {  /* если включить opacity в кейфрейме, hover не работает */
+  0% {
+      top: 900px;
+      /*opacity: 0;*/
+  }
+  /*25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }*/
+  100% {
+      top: -200px;
+      /*opacity: 0;*/
+  }
+}
+
+.first__bable-text {
+  margin: 0;
+  padding: 0;
+  width: 268px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-align: center;
+  color: #000000;
+}
+
+.first__bable-text_width_small {
+  width: 200px;
+}
