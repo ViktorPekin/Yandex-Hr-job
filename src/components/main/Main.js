@@ -1,6 +1,8 @@
 import First from './first/First'
 import Tasks from './tasks/Tasks'
+import Advantages from './advantages/Advantages'
 import ProductIntroduction from './product-introduction/ProductIntroduction'
+
 
 const Main = () => {
   return (
@@ -8,6 +10,7 @@ const Main = () => {
       <First />
       <Tasks />
       <ProductIntroduction />
+      <Advantages />
     </main>
   )
 }
