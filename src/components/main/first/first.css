@@ -75,31 +75,36 @@
 }
 
 .first__bable:hover { /* если включить opacity в кейфрейме, hover не работает */
-  opacity: 0.8;
+  cursor: pointer;
 }
 
 
 .first__bable_pozition_one {
+  background-color: rgb(182, 192, 255);
   width: 332px;
   animation-delay: 2s;
 }
 
 .first__bable_pozition_two {
+  background-color: rgb(150, 164, 254);
   width: 286px;
   animation-delay: 4s;
 }
 
 .first__bable_pozition_three {
+  background-color: rgb(206, 212, 252);
   width: 332px;
   animation-delay: 6s;
 }
 
 .first__bable_pozition_four {
+  background-color: rgb(108, 127, 255);
   width: 286px;
   animation-delay: 8s;
 }
 
 .first__bable_pozition_five {
+  background-color: rgb(121, 231, 251);
   width: 332px;
   animation-delay: 10s;
 }
@@ -107,17 +112,21 @@
 @keyframes transfer {  /* если включить opacity в кейфрейме, hover не работает */
   0% {
       top: 900px;
-      /*opacity: 0;*/
+      opacity: 0;
+      transform: scale(0);
   }
-  /*25% {
+  25% {
     opacity: 1;
+    transform: scale(1);
   }
   75% {
     opacity: 1;
-  }*/
+    transform: scale(1);
+  }
   100% {
       top: -200px;
-      /*opacity: 0;*/
+      opacity: 0;
+      transform: scale(0);
   }
 }
 
