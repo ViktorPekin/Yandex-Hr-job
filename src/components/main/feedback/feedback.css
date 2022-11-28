@@ -1,0 +1,13 @@
+.feedback {
+
+}
+
+.feedback__title {
+
+}
+
+.feedback__container {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+}
