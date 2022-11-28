@@ -37,7 +37,7 @@
 }
 .howToBecome {
   font-family: 'Yandex Sans Display';
-  color: #000000;
+  color: #262626;
   padding: 0 108px;
   display: flex;
   flex-direction: column;
@@ -76,7 +76,7 @@
   height: 100%;
   padding: 48px 65px;
   border-radius: 90px;
-  background-color: rgba(210, 229, 249, 0.6);
+  background-color: #CCE0F7;;
   position: absolute;
   box-sizing: border-box;
   gap: 12px;
@@ -95,7 +95,7 @@
   height: 144px;
   padding: 48px 65px;
   border-radius: 90px;
-  background-color: #BBD6F4;;
+  background-color: #BBD6F4;
   position: absolute;
   box-sizing: border-box;
   gap: 12px;
