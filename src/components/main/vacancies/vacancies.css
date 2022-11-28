@@ -1,0 +1,78 @@
+.vacancies {
+  padding: 80px 108px 0 108px;
+  background-color: #eaeaea;
+}
+
+.vacancies__title {
+  margin-bottom: 60px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.vacancies__job-container {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.vacancies__job {
+  background-color: #fff;
+  padding: 10px 24px 10px 16px;
+  border-radius: 8px 0px 0px 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #858585;
+}
+
+.vacancies__job:hover {
+  cursor: pointer;
+}
+
+.vacancies__job_active {
+  color: #000000;
+}
+
+.vacancies__direction__container {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.vacancies__direction {
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #858585;
+}
+
+.vacancies__direction_active {
+  color: #000000;
+}
+
+.vacancies__job:last-child {
+  padding: 10px 16px 10px 24px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.vacancies__container {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 220px);
+  grid-auto-rows: minmax(min-content, max-content);
+  gap: 24px;
+  justify-content: center;
+}

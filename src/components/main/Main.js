@@ -3,6 +3,7 @@ import Tasks from './tasks/Tasks'
 import HowToBecome from './howToBecome/howToBecome'
 import Advantages from './advantages/Advantages'
 import ProductIntroduction from './product-introduction/ProductIntroduction'
+import Vacancies from './vacancies/Vacancies'
 import NoWork from './no-work/NoWork'
 import Feedback from './feedback/Feedback'
 
@@ -14,6 +15,7 @@ const Main = () => {
       <HowToBecome />
       <ProductIntroduction />
       <Advantages />
+      <Vacancies />
       <NoWork />
       <Feedback />
     </main>

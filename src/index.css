@@ -8,3 +8,5 @@
 @import url(./components/main/main.css);
 @import url(./components/main/tasks/tasks.css);
 @import url(./components/main/product-introduction/product-introduction.css);
+@import url(./components/main/vacancies/vacancies.css);
+@import url(./components/main/vacancies/vacancy/vacancy.css);
