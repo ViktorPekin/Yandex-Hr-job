@@ -1,19 +1,29 @@
 import { useEffect, useState } from 'react'
 import data from '../../../utils/bd-mentor.json'
 import Vacancy from './vacancy/Vacancy'
-const Vacancies = () => {
+const Vacancies = (props) => {
   const [bd, setBd] = useState([])
+  const [start, setStart] = useState(false)
   const [activeJobMentor, setActiveJobMentor] = useState(true)
   const [activeDirection, setActiveDirection] = useState(0)
-  const [cardOnPage, setCardOnPage] = useState(3)
+  const [cardOnPage, setCardOnPage] = useState(0)
   const [hiddenButton, setHiddenButton] = useState(true)
 
   useEffect(() => {
-    setBd(data.programming)
+    setTimeout(() => {
+      setStart(true)
+      setBd(props.dataBase.programming)
+    }, 5000)
   }, [])
 
   const addCard = () => {
-    console.log(bd.length)
+    let numberAllCardOnPage = cardOnPage + 3
+    if (numberAllCardOnPage >= bd.length) {
+      setHiddenButton(false)
+    }
+    setCardOnPage(numberAllCardOnPage)
+    console.log(data.programming)
+    console.log(props.dataBase.programming)
   }
 
   return (
@@ -76,11 +86,16 @@ const Vacancies = () => {
         </li>
       </ul>
       <ul className='vacancies__container'>
-        {bd.slice(0, 3).map((element) => (
-          <Vacancy card={element} key={element.id} />
-        ))}
+        {start
+          ? props.dataBase.programming
+              .slice(0, cardOnPage)
+              .map((element) => <Vacancy card={element} key={element.id} />)
+          : ''}
       </ul>
-      <button on onClick={addCard}>
+      <button
+        onClick={addCard}
+        className={hiddenButton ? 'vacancies__button' : 'vacancies__button vacancies__button_hidden'}
+      >
         Еще
       </button>
     </section>

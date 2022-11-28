@@ -10,3 +10,5 @@
 @import url(./components/main/product-introduction/product-introduction.css);
 @import url(./components/main/vacancies/vacancies.css);
 @import url(./components/main/vacancies/vacancy/vacancy.css);
+@import url(./components/not-found/not-found.css);
+@import url(./components/vacancy-info/vacancy-info.css);

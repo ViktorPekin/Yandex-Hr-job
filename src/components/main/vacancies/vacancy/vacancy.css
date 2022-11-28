@@ -17,6 +17,7 @@
   transition: transform 1s linear 0.5s;
   transition-property: transform;
   backface-visibility: hidden;
+  border-radius: 20px;
 }
 
 .vacancy__back {
@@ -31,10 +32,10 @@
   transform: rotateY(-180deg);
   opacity: 1;
   transition-property: transform;
-}
-
-.vacancy__text {
-  transform: rotateY(360deg);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .vacancy:hover .vacancy__front {
@@ -46,4 +47,52 @@
 .vacancy:hover .vacancy__back {
   transform: rotateY(0deg);
   transition: transform 1s;
+}
+
+.vacancy__profession {
+  margin: 20px 20px 8px 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.vacancy__well {
+  margin: 0px 20px 70px 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.vacancy__salary {
+  margin: 0 20px 20px 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.vacancy__info-container {
+  padding: 0;
+  margin: 20px 20px 20px 35px;
+  transform: rotateY(360deg);
+  list-style-type: disc;
+}
+
+.vacancy__info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.vacancy__info-more {
+  margin: 0 20px 20px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: end;
 }
