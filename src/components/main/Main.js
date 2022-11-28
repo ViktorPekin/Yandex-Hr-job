@@ -18,7 +18,7 @@ const Main = (props) => {
       <HowToBecome />
       <ProductIntroduction />
       <Advantages />
-      <Vacancies dataBase={props.dataBase} onSelectorDataBase={props.onSelectorDataBase} />
+      <Vacancies dataBase={props.dataBase} />
       <NoWork />
       <Feedback />
       <Footer />

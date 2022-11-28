@@ -7,7 +7,6 @@ import data from '../../utils/bd-mentor.json'
 
 const App = () => {
   const [dataBase, setDataBase] = useState([])
-  const [selectedDataBase, setSelectorDadaBase] = useState([])
   useEffect(() => {
     setDataBase(data)
   }, [])
@@ -15,8 +14,8 @@ const App = () => {
   return (
     <div className='app'>
       <Routes>
-        <Route path='/' element={<Main dataBase={dataBase} onSelectorDataBase={setSelectorDadaBase} />} />
-        <Route path='/vacancy' element={<VacancyInfo selectedDataBase={selectedDataBase} />} />
+        <Route path='/' element={<Main dataBase={dataBase} />} />
+        <Route path='/vacancy' element={<VacancyInfo />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
