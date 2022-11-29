@@ -9,12 +9,14 @@ import Vacancies from './vacancies/Vacancies'
 import NoWork from './no-work/NoWork'
 import Feedback from './feedback/Feedback'
 import WhatAwaitsYou from './whatAwaitsYou/WhatAwaitsYou'
+import Practicum from './practicum/Practicum'
 
 const Main = () => {
   return (
     <main className='main'>
       <Header />
       <First />
+      <Practicum />
       <Tasks />
       <HowToBecome />
       <ProductIntroduction />

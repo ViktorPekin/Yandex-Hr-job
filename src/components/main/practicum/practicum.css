@@ -1,0 +1,117 @@
+.practicum {
+  padding: 80px 108px 85px 80px;
+  background-color: var(--background);
+}
+
+.practicum__title {
+  margin: 0 0 55px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: var(--black);
+}
+
+.practicum__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.practicum__text {
+  width: 222px;
+  height: 222px;
+}
+
+.practicum__text-top {
+  position: sticky;
+  margin: 0;
+  width: 222px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 110%;
+  color: var(--black);
+  height: 111px;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+.practicum__text:nth-child(2n + 1) .practicum__text-top {
+  background-color: var(--light-blue);
+  z-index: 0;
+}
+
+.practicum__text:nth-child(2n) .practicum__text-top {
+  border: 2px solid var(--black);
+  width: 220px;
+  border-bottom: none;
+  z-index: 2;
+}
+
+.practicum__text-bottom {
+  position: sticky;
+  margin: 0;
+  width: 222px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  height: 111px;
+}
+
+.practicum__text:nth-child(2n + 1) .practicum__text-bottom {
+  border: 2px solid var(--black);
+  width: 220px;
+  border-top: none;
+  z-index: 2;
+}
+
+.practicum__text:nth-child(2n) .practicum__text-bottom {
+  background-color: var(--white);
+  z-index: 0;
+}
+
+.practicum__text-link {
+  width: 222px;
+  height: 222px;
+  background-color: var(--white);
+  border-radius: 90%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.practicum__img-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 222px;
+  height: 222px;
+  background: center/contain no-repeat url(../../../images/path120.svg);
+}
+
+.practicum__text-content {
+  margin: 10px;
+}
+
+.practicum__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 122%;
+  color: var(--blue);
+  z-index: 10;
+  text-decoration: none;
+}
+
+.practicum__link:hover {
+  cursor: pointer;
+}
