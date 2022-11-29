@@ -1,13 +1,12 @@
+import PictureContainer from '../../../images/PictureContainer.png'
+import IconReviewer from '../../../images/IconReviewer.png'
+
 const Tasks = () => {
   return (
     <section className='tasks' id='tasks'>
       <ul className='tasks__container'>
         <li className='task'>
-          <img
-            className='task__image'
-            src='https://www.gazeta-chi.ru/uploads/entries/97maxresdefault.jpg'
-            alt='Задача наставника'
-          ></img>
+          <img className='task__image' src={PictureContainer} alt='Задача наставника'></img>
           <div className='task__content'>
             <h2 className='task__title font_display'>Задачи наставника</h2>
             <ul className='task__container'>
@@ -19,11 +18,7 @@ const Tasks = () => {
           </div>
         </li>
         <li className='task'>
-          <img
-            className='task__image'
-            src='https://www.gazeta-chi.ru/uploads/entries/97maxresdefault.jpg'
-            alt='Задача ревьюера'
-          ></img>
+          <img className='task__image' src={IconReviewer} alt='Задача ревьюера'></img>
           <div className='task__content'>
             <h2 className='task__title font_display'>Задачи ревьюера</h2>
             <ul className='task__container'>
