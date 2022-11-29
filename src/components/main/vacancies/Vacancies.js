@@ -40,7 +40,7 @@ const Vacancies = () => {
   }
 
   return (
-    <section className='vacancies'>
+    <section className='vacancies' id='vacancies'>
       <h2 className='vacancies__title font_display'>Открытые предложения</h2>
       <ul className='vacancies__job-container'>
         <li
