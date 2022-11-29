@@ -37,7 +37,7 @@ const Practicum = () => {
         </div>
         <div className='practicum__text-link'>
           <div className='practicum__img-arrow'></div>
-          <a className='practicum__link' href='https://practicum.yandex.ru/'>
+          <a className='practicum__link' href='https://practicum.yandex.ru/' target='_blank' rel='noreferrer'>
             Узнать больше
           </a>
         </div>

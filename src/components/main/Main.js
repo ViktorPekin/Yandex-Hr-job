@@ -4,7 +4,6 @@ import First from './first/First'
 import Tasks from './tasks/Tasks'
 import HowToBecome from './howToBecome/HowToBecome'
 import Advantages from './advantages/Advantages'
-import ProductIntroduction from './product-introduction/ProductIntroduction'
 import Vacancies from './vacancies/Vacancies'
 import NoWork from './no-work/NoWork'
 import Feedback from './feedback/Feedback'
@@ -19,7 +18,6 @@ const Main = () => {
       <Practicum />
       <Tasks />
       <HowToBecome />
-      <ProductIntroduction />
       <Advantages />
       <WhatAwaitsYou />
       <Vacancies />
