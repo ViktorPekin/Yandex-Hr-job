@@ -10,7 +10,7 @@ import NoWork from './no-work/NoWork'
 import Feedback from './feedback/Feedback'
 import WhatAwaitsYou from './whatAwaitsYou/WhatAwaitsYou'
 
-const Main = (props) => {
+const Main = () => {
   return (
     <main className='main'>
       <Header />
@@ -20,7 +20,7 @@ const Main = (props) => {
       <ProductIntroduction />
       <Advantages />
       <WhatAwaitsYou />
-      <Vacancies dataBase={props.dataBase} />
+      <Vacancies />
       <NoWork />
       <Feedback />
       <Footer />
