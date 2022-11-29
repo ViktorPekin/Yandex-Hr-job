@@ -4,7 +4,7 @@ import './first.css';
 
 const First = () => {
 
-  const [ animation, setAnimation ] = useState(true);
+  const [animation, setAnimation] = useState(true);
 
   const animationManagementStop = () => {
     setAnimation(false);
@@ -14,24 +14,29 @@ const First = () => {
     setAnimation(true);
   }
 
-  return <section className='first font_display'>
-    <h1 className='first__title'>Наставник или ревьюер?</h1>
-    <p className='first__text'>Решать тебе!</p>
-    <button type='button' className='first__button'>Начать делиться знаниями</button>
-    <div className='first__bable first__bable_pozition_one' style={animation ? {animationPlayState: 'running'} : {animationPlayState: 'paused'}} onMouseOver={animationManagementStop} onMouseLeave={animationManagementStart}>
-      <p className='first__bable-text'>Делись знаниями в программировании</p>
+  return <section className='first'>
+    <article className='first_container'>
+      <h1 className='first__title font_display'>Ищем ревьюеров и наставников в Практикум</h1>
+      <p className='first__text'>Стань нашим экспертом! Делись своим опытом и знаниями.</p>
+      <button type='button' className='first__button'>Посмотреть предложения</button>
+    </article>
+    <div className='first__bable first__bable_pozition_one' style={animation ? { animationPlayState: 'running' } : { animationPlayState: 'paused' }} onMouseOver={animationManagementStop} onMouseLeave={animationManagementStart}>
+      <p className='first__bable-text'>Делись знаниями в&nbsp;программировании</p>
     </div>
-    <div className='first__bable first__bable_pozition_two' style={animation ? {animationPlayState: 'running'} : {animationPlayState: 'paused'}} onMouseOver={animationManagementStop} onMouseLeave={animationManagementStart}>
-      <p className='first__bable-text'>Получай доход от&nbsp;35&nbsp;тысяч&nbsp;в&nbsp;мес.</p>
+    <div className='first__bable first__bable_pozition_two' style={animation ? { animationPlayState: 'running' } : { animationPlayState: 'paused' }} onMouseOver={animationManagementStop} onMouseLeave={animationManagementStart}>
+      <p className='first__bable-text first__bable-text_small'>Получай доход от&nbsp;35&nbsp;000 в&nbsp;месяц</p>
     </div>
-    <div className='first__bable first__bable_pozition_three' style={animation ? {animationPlayState: 'running'} : {animationPlayState: 'paused'}} onMouseOver={animationManagementStop} onMouseLeave={animationManagementStart}>
+    <div className='first__bable first__bable_pozition_three' style={animation ? { animationPlayState: 'running' } : { animationPlayState: 'paused' }} onMouseOver={animationManagementStop} onMouseLeave={animationManagementStart}>
+      <p className='first__bable-text'>Развивай личный бренд</p>
+    </div>
+    <div className='first__bable first__bable_pozition_four' style={animation ? { animationPlayState: 'running' } : { animationPlayState: 'paused' }} onMouseOver={animationManagementStop} onMouseLeave={animationManagementStart}>
+      <p className='first__bable-text'>Делись опытом в дизайне и&nbsp;маркетинге</p>
+    </div>
+    <div className='first__bable first__bable_pozition_five' style={animation ? { animationPlayState: 'running' } : { animationPlayState: 'paused' }} onMouseOver={animationManagementStop} onMouseLeave={animationManagementStart}>
       <p className='first__bable-text'>Стань частью сообщества экспертов</p>
     </div>
-    <div className='first__bable first__bable_pozition_four' style={animation ? {animationPlayState: 'running'} : {animationPlayState: 'paused'}} onMouseOver={animationManagementStop} onMouseLeave={animationManagementStart}>
-      <p className='first__bable-text first__bable-text_width_small'>Развивай личный бренд</p>
-    </div>
-    <div className='first__bable first__bable_pozition_five' style={animation ? {animationPlayState: 'running'} : {animationPlayState: 'paused'}} onMouseOver={animationManagementStop} onMouseLeave={animationManagementStart}>
-      <p className='first__bable-text'>Делись опытом в&nbsp;маркетинге&nbsp;и&nbsp;дизайне</p>
+    <div className='first__bable first__bable_pozition_six' style={animation ? { animationPlayState: 'running' } : { animationPlayState: 'paused' }} onMouseOver={animationManagementStop} onMouseLeave={animationManagementStart}>
+      <p className='first__bable-text'>Развивай свои софт скиллы</p>
     </div>
   </section>
 }
