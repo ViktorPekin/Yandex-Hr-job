@@ -6,8 +6,8 @@
   left: 5%;
   top: 5%;
   z-index: -1;
-  width: 90%;
-  height: 90%;
+  width: 50vh;
+  height: 100vh;
   background: #fff;
   border-radius: 20px;
 }

@@ -1,148 +1,153 @@
 .first {
   position: relative;
-  padding-top: 138px;
   height: 700px;
   width: 100%;
   font-style: normal;
   color: #000000;
-  background-color: transparent;
+  background-image: url('../../../images/background_first.png');
   overflow: hidden;
 }
 
+.first_container {
+  display: flex;
+  flex-direction: column;
+  margin: 72px auto 72px 0 ;
+  width: 574px;
+  height: 556px;
+  background: #FFFFFF;
+  border-radius: 0px 80px 80px 0px;
+}
+
 .first__title {
-  margin: 0;
+  margin: 80px auto 0 108px;
   padding: 0;
-  position: absolute;
-  top: 138px;
-  left: 108px;
-  z-index: 1;
+  width: 416px;
+  font-style: normal;
   font-weight: 500;
-  font-size: 70px;
-  line-height: 82px;
+  font-size: 52px;
+  line-height: 110%;
+  color: var(--black);
 }
 
 .first__text {
-  margin: 0;
+  margin: 28px auto 0 108px;
   padding: 0;
-  margin-top: 101px;
-  margin-left: 108px;
+  width: 330px;
   font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 122%;
+  color: var(--black);
 }
 
 .first__button {
-  margin: 0;
+  margin: 89px auto 0 108px;
   padding: 0;
   border: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 138px;
-  margin-left: 108px;
   width: 286px;
   height: 60px;
   border-radius: 120px;
-  background: #373737;
-  color: #FFF;
+  background: var(--blue);
+  color: var(--white);
   backdrop-filter: blur(6px);
 }
 
 .first__button:hover {
   cursor: pointer;
-  opacity: .8;
+  background: var(--blue-hover);
 }
 
 .first__bable {
   position: absolute;
-  left: 55%;
-  top: -200px;
-  z-index: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 128px;
-  width: 50px;
-  background: #C4C4C4;
+  width: 332px;
+  height: 82px;
+  background-color: var(--white);
   border-radius: 90px;
-  animation-name: transfer;
-  animation-duration: 10s;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-}
-
-.first__bable:hover { /* если включить opacity в кейфрейме, hover не работает */
-  cursor: pointer;
-}
-
-
-.first__bable_pozition_one {
-  background-color: rgb(182, 192, 255);
-  width: 332px;
-  animation-delay: 2s;
-}
-
-.first__bable_pozition_two {
-  background-color: rgb(150, 164, 254);
-  width: 286px;
-  animation-delay: 4s;
-}
-
-.first__bable_pozition_three {
-  background-color: rgb(206, 212, 252);
-  width: 332px;
-  animation-delay: 6s;
-}
-
-.first__bable_pozition_four {
-  background-color: rgb(108, 127, 255);
-  width: 286px;
-  animation-delay: 8s;
-}
-
-.first__bable_pozition_five {
-  background-color: rgb(121, 231, 251);
-  width: 332px;
-  animation-delay: 10s;
-}
-
-@keyframes transfer {  /* если включить opacity в кейфрейме, hover не работает */
-  0% {
-      top: 900px;
-      opacity: 0;
-      transform: scale(0);
-  }
-  25% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  75% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-      top: -200px;
-      opacity: 0;
-      transform: scale(0);
-  }
+  animation-name: transfer;
 }
 
 .first__bable-text {
   margin: 0;
   padding: 0;
-  width: 268px;
+  width: 300px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 122%;
   text-align: center;
-  text-align: center;
-  color: #000000;
+  color: var(--black);
 }
 
-.first__bable-text_width_small {
-  width: 200px;
+.first__bable-text_small {
+  width: 80%;
+}
+
+.first__bable:nth-of-type(2n) {
+  background-color: var(--blue-bable);
+}
+
+.first__bable:hover {
+  cursor: pointer;
+}
+
+.first__bable_pozition_one {
+  left: 916px;
+}
+
+.first__bable_pozition_two {
+  left: 628px;
+  animation-delay: 5s;
+}
+
+.first__bable_pozition_three {
+  left: 1044px;
+  animation-delay: 10s;
+}
+
+.first__bable_pozition_four {
+  left: 732px;
+  animation-delay: 15s;
+}
+
+.first__bable_pozition_five {
+  left: 1000px;
+  animation-delay: 20s;
+}
+
+.first__bable_pozition_six {
+  left: 628px;
+  animation-delay: 25s;
+}
+
+@keyframes transfer {
+  0% {
+    top: 782px;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    top: -700px;
+  }
 }
