@@ -12,8 +12,15 @@
 }
 
 .feedback-card__container {
+  position: relative;
   margin: 28px auto 36px;
   width: 86.66%;
+}
+
+.feedback-card__icon {
+  position: absolute;
+  right: 0;
+  top: -103px;
 }
 
 .feedback-card__card-title {
