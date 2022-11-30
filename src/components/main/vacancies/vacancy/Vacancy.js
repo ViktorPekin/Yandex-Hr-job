@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { v4 as uuidv4 } from 'uuid'
 
 const Vacancy = (props) => {
@@ -16,9 +15,12 @@ const Vacancy = (props) => {
           </div>
           <h3 className='vacancy__well'>{props.card.well}</h3>
         </div>
-        <p className='vacancy__salary'>{props.card.salary}</p>
+        <div className='vacancy__salary-contauner'>
+          <p className='vacancy__salary'>{props.card.salary}</p>
+          {props.mobile ? <div className='vacancy__salary-arrow'></div> : ''}
+        </div>
       </div>
-      <Link to='/vacancy' target='_blank' onClick={openVacancyPage} className='vacancy__back'>
+      <div onClick={openVacancyPage} className='vacancy__back'>
         <div className='vacancy__back-container'>
           <h3 className='vacancy__info-title'>Кого мы ищем</h3>
           <ul className='vacancy__info-container'>
@@ -29,8 +31,10 @@ const Vacancy = (props) => {
             ))}
           </ul>
         </div>
-        <p className='vacancy__info-more'>Подробнее</p>
-      </Link>
+        <a className='vacancy__info-more' href={props.card.link} target='_blank' rel='noreferrer'>
+          Подробнее
+        </a>
+      </div>
     </li>
   )
 }

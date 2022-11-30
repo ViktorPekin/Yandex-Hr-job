@@ -1,42 +1,86 @@
 import { useEffect, useState } from 'react'
 import Vacancy from './vacancy/Vacancy'
 import data from '../../../utils/bd-mentor.json'
+import {
+  NUMBER_CARD_PC,
+  NUMBER_CARD_MOBILE,
+  SCREEN_PC,
+  PROGRAMMING,
+  ANALYTICS,
+  DESIGN,
+  MARKETING,
+  MANAGEMENT,
+} from '../../../utils/constants'
 
 const Vacancies = () => {
   const [dataBase, setDataBase] = useState([])
   const [start, setStart] = useState(false)
   const [activeJobMentor, setActiveJobMentor] = useState(true)
   const [activeDirection, setActiveDirection] = useState(0)
-  const [cardOnPage, setCardOnPage] = useState(12)
+  const [cardOnPage, setCardOnPage] = useState(0)
   const [hiddenButton, setHiddenButton] = useState(true)
+  const [mobile, setMobile] = useState(false)
 
   useEffect(() => {
     setStart(true)
     setDataBase(data.programming)
-    checkHiddenButton(data.programming)
   }, [])
 
-  const addCard = () => {
-    let numberAllCardOnPage = cardOnPage + 3
-    if (numberAllCardOnPage >= dataBase.length) {
-      setHiddenButton(false)
+  useEffect(() => {
+    if (window.screen.width > SCREEN_PC) {
+      setCardOnPage(NUMBER_CARD_PC)
+      checkHiddenButton(dataBase, NUMBER_CARD_PC)
+      setMobile(false)
+    } else {
+      setCardOnPage(NUMBER_CARD_MOBILE)
+      checkHiddenButton(dataBase, NUMBER_CARD_MOBILE)
+      setMobile(true)
     }
-    setCardOnPage(numberAllCardOnPage)
+  }, [dataBase])
+
+  useEffect(() => {
+    window.addEventListener('resize', setTimeoutResize)
+    return () => {
+      window.removeEventListener('resize', setTimeoutResize)
+    }
+  })
+
+  let doit
+  const setTimeoutResize = () => {
+    clearTimeout(doit)
+    doit = setTimeout(changeWidthWindow, 1000)
+  }
+
+  const changeWidthWindow = () => {
+    if (window.screen.width > SCREEN_PC) {
+      setCardOnPage(NUMBER_CARD_PC)
+      checkHiddenButton(dataBase, NUMBER_CARD_PC)
+      setMobile(false)
+    } else {
+      setCardOnPage(NUMBER_CARD_MOBILE)
+      checkHiddenButton(dataBase, NUMBER_CARD_MOBILE)
+      setMobile(true)
+    }
+  }
+
+  const addCard = () => {
+    setHiddenButton(false)
+    setCardOnPage(dataBase.length)
   }
 
   const handleDirection = (numberElement, mentorDirection, reviewDirection) => {
     setActiveDirection(numberElement)
     if (activeJobMentor === true) {
       setDataBase(mentorDirection)
-      checkHiddenButton(mentorDirection)
+      checkHiddenButton(mentorDirection, cardOnPage)
     } else {
       setDataBase(reviewDirection)
-      checkHiddenButton(reviewDirection)
+      checkHiddenButton(reviewDirection, cardOnPage)
     }
   }
 
-  const checkHiddenButton = (direction) => {
-    direction.length > cardOnPage ? setHiddenButton(true) : setHiddenButton(false)
+  const checkHiddenButton = (direction, amount) => {
+    direction.length > amount ? setHiddenButton(true) : setHiddenButton(false)
   }
 
   return (
@@ -47,7 +91,8 @@ const Vacancies = () => {
           onClick={() => {
             setActiveJobMentor(true)
             setDataBase(data.programming)
-            setActiveDirection(0)
+            setActiveDirection(PROGRAMMING)
+            checkHiddenButton(data.programming, cardOnPage)
           }}
           className={activeJobMentor ? 'vacancies__job vacancies__job_active' : 'vacancies__job'}
         >
@@ -57,7 +102,8 @@ const Vacancies = () => {
           onClick={() => {
             setActiveJobMentor(false)
             setDataBase(data.programmingReview)
-            setActiveDirection(0)
+            setActiveDirection(PROGRAMMING)
+            checkHiddenButton(data.programmingReview, cardOnPage)
           }}
           className={activeJobMentor ? 'vacancies__job' : 'vacancies__job vacancies__job_active'}
         >
@@ -67,55 +113,70 @@ const Vacancies = () => {
       <div className='vacancies__block-direction'>
         <ul className='vacancies__direction-container'>
           <li
-            onClick={() => handleDirection(0, data.programming, data.programmingReview)}
+            onClick={() => handleDirection(PROGRAMMING, data.programming, data.programmingReview)}
             className={
-              activeDirection === 0 ? 'vacancies__direction vacancies__direction_active' : 'vacancies__direction'
+              activeDirection === PROGRAMMING
+                ? 'vacancies__direction vacancies__direction_active'
+                : 'vacancies__direction'
             }
           >
             Программирование
           </li>
           <li
-            onClick={() => handleDirection(1, data.analytics, data.analyticsReview)}
+            onClick={() => handleDirection(ANALYTICS, data.analytics, data.analyticsReview)}
             className={
-              activeDirection === 1 ? 'vacancies__direction vacancies__direction_active' : 'vacancies__direction'
+              activeDirection === ANALYTICS
+                ? 'vacancies__direction vacancies__direction_active'
+                : 'vacancies__direction'
             }
           >
             Аналитика
           </li>
           <li
-            onClick={() => handleDirection(2, data.design, data.designReview)}
+            onClick={() => handleDirection(DESIGN, data.design, data.designReview)}
             className={
-              activeDirection === 2 ? 'vacancies__direction vacancies__direction_active' : 'vacancies__direction'
+              activeDirection === DESIGN ? 'vacancies__direction vacancies__direction_active' : 'vacancies__direction'
             }
           >
             Дизайн
           </li>
           <li
-            onClick={() => handleDirection(3, data.marketing, data.marketingReview)}
+            onClick={() => handleDirection(MARKETING, data.marketing, data.marketingReview)}
             className={
-              activeDirection === 3 ? 'vacancies__direction vacancies__direction_active' : 'vacancies__direction'
+              activeDirection === MARKETING
+                ? 'vacancies__direction vacancies__direction_active'
+                : 'vacancies__direction'
             }
           >
             Маркетинг
           </li>
           <li
-            onClick={() => handleDirection(4, data.management, data.managementReview)}
+            onClick={() => handleDirection(MANAGEMENT, data.management, data.managementReview)}
             className={
-              activeDirection === 4 ? 'vacancies__direction vacancies__direction_active' : 'vacancies__direction'
+              activeDirection === MANAGEMENT
+                ? 'vacancies__direction vacancies__direction_active'
+                : 'vacancies__direction'
             }
           >
-            Менеджмен
+            Менеджмент
           </li>
         </ul>
-        <div className='vacancies__new-vacancy'>
-          <div className='vacancies__new-vacancy-logo'></div>
-          <p className='vacancies__new-vacancy-text'>Новые предложения</p>
-        </div>
+        {dataBase.length ? (
+          <div className='vacancies__new-vacancy'>
+            <div className='vacancies__new-vacancy-logo'></div>
+            <p className='vacancies__new-vacancy-text'>Новые предложения</p>
+          </div>
+        ) : (
+          ''
+        )}
       </div>
-
       {dataBase.length ? (
         <ul className='vacancies__container'>
-          {start ? dataBase.slice(0, cardOnPage).map((element) => <Vacancy card={element} key={element.id} />) : ''}
+          {start
+            ? dataBase
+                .slice(0, cardOnPage)
+                .map((element) => <Vacancy card={element} mobile={mobile} key={element.id} />)
+            : ''}
         </ul>
       ) : (
         <div>
@@ -123,7 +184,6 @@ const Vacancies = () => {
           <p className='vacancies__not-vacancy-text'>Чтобы посмотреть другие, поменяйте роль или направление.</p>
         </div>
       )}
-
       <p
         onClick={addCard}
         className={hiddenButton ? 'vacancies__button' : 'vacancies__button vacancies__button_hidden'}
