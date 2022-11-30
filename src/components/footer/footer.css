@@ -1,2 +1,348 @@
+@import url(../../vendor/fonts/stylesheet.css);
+@import url(../../utils/css-variables.css);
+
+
 .footer {
+  padding: 80px 108px 96px 108px;
+  background: var(--white);
+  color: var(--black);
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 1.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row dense;
+  grid-template-areas:
+    "footer__contacts footer__info footer__subscribe"
+    "footer__copyright footer__copyright footer__subscribe";
+}
+
+.footer__contacts {
+  grid-area: footer__contacts;
+  max-width: 416px;
+}
+
+.footer__contacts_title {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  font-family: 'Yandex Sans Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.footer__contacts_subtitle {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  font-family: 'Yandex Sans Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.footer__contacts_links{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__contacts_link {
+  margin: 0;
+  padding: 0;
+  font-family: 'Yandex Sans Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.footer__contacts_link:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 1s ease-in-out;
+}
+
+.footer__info {
+  margin-right: 24px;
+  max-width: 392px;
+  grid-area: footer__info;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 45px;
+}
+
+.footer__info_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.footer__info_link {
+  margin: 0;
+  padding: 0;
+  font-family: 'Yandex Sans Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.footer__info_link:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 1s ease-in-out;
+}
+.footer__info_link-desctop {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__info_link-mobile {
+  display: none;
+}
+
+.footer__copyright {
+  max-width: 744px;
+  margin-top: 21px;
+  padding-right: 40px;
+  grid-area: footer__copyright;
+}
+
+.footer__copyright_text,
+.footer__copyright_copy {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  font-family: 'Yandex Sans Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: var(--dark-gray);
+}
+
+.footer__copyright_copy {
+  color: var(--black);
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.footer__subscribe {
+  grid-area: footer__subscribe;
+}
+
+.footer__subscribe_logo {
+  margin-bottom: 35px;
+}
+
+.footer__subscribe_logoMobile {
+  display: none;
+}
+
+.footer__subscribe_text {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  font-family: 'Yandex Sans Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.footer__subscribe_button {
+  width: 289px;
+  height: 60px;
+  border-radius: 120px;
+  border: none;
+  background: var(--blue);
+  font-family: 'Yandex Sans Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: var(--white);
+}
+
+.footer__subscribe_button:hover {
+  cursor: pointer;
+  background: var(--blue-hover);
+  transition: 1s ease-in-out;
+}
+
+@media screen and (max-width: 1199.98px) {
+
+  .footer__contacts_title {
+    font-size: 28px;
+    line-height: 114%;
+    order: 1;
+  }
+
+  .footer__info {
+    gap: 20px;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .footer {
+    padding: 32px 50px;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer__contacts_title {
+    font-size: 28px;
+    line-height: 114%;
+    order: 1;
+  }
+
+  .footer__info {
+    max-height: 160px;
+  }
+
+  .footer__subscribe {
+    margin-top: 21px;
+  }
+
+  .footer__contacts_links {
+    margin-bottom: 32px;
+  }
+  .footer__subscribe_text {
+    max-width: 289px;
+  }
+}
+
+@media screen and (max-width: 549.98px) {
+  .footer {
+    padding: 32px 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer__subscribe {
+    order: -1;
+    margin-top: 0;
+  }
+
+  .footer__subscribe_logo {
+    display: none;
+  }
+
+  .footer__subscribe_logoMobile {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .footer__subscribe_text {
+    font-size: 16px;
+    line-height: 125%;
+    margin-bottom: 16px;
+  }
+
+  .footer__subscribe_button {
+    width: 343px;
+    height: 60px;
+    margin-bottom: 32px;
+  }
+
+  .footer__contacts {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer__contacts_link:nth-child(3n-2) {
+    order: 2;
+  }
+
+  .footer__contacts_subtitle {
+    font-size: 16px;
+    line-height: 125%;
+    order: 2;
+    margin-bottom: 32px;
+  }
+
+  .footer__contacts_title {
+    font-size: 28px;
+    line-height: 114%;
+    order: 1;
+  }
+
+  .footer__contacts_links {
+    order: -1;
+  }
+
+  .footer__info {
+    margin-right: 0;
+    gap: 80px;
+  }
+
+  .footer__info_link-desctop {
+    display: none;
+  }
+
+  .footer__info_link-mobile {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__copyright {
+    margin-top: 32px;
+    padding: 0;
+  }
+
+  .footer__copyright_text,
+  .footer__copyright_copy {
+    font-size: 12px;
+    line-height: 133%;
+  }
 }
