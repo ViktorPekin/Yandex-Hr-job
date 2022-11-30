@@ -14,7 +14,7 @@ const Main = () => {
   return (
     <main className='main'>
       <Header />
-      <First />
+      {/*       <First />
       <Practicum />
       <Tasks />
       <HowToBecome />
@@ -23,7 +23,7 @@ const Main = () => {
       <Vacancies />
       <NoWork />
       <Feedback />
-      <Footer />
+      <Footer /> */}
     </main>
   )
 }
