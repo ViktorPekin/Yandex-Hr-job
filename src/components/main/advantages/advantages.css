@@ -1,8 +1,8 @@
 .advantages {
   width: 100%;
-  background: #F7F7F8;
+  background: var(--background);
   color: #000000;
-  padding: 80px 0;
+  padding: 60px 0 80px;
 }
 
 .advantages__title {
@@ -56,9 +56,9 @@
 
 .advantages__card-img {
   position: absolute;
-  right: -10px;
-  top: -20px;
-  width: 70px;
-  height: 70px;
+  right: 20px;
+  top: 20px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
