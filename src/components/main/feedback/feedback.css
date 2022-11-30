@@ -1,5 +1,6 @@
 .feedback {
-  background: #858585;
+  padding: 80px 108px 78px;
+  background: var(--background);
 }
 
 .feedback__title {
@@ -9,11 +10,26 @@
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
-  color: #FFFFFF;
+  color: var(--black);
 }
 
 .feedback__container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 60px 0 28px;
   width: 100%;
-  overflow: auto;
+}
+
+.feedback__button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--blue);
+}
+
+.feedback__button:hover {
+  cursor: pointer;
+  color: var(--blue-hover);
 }
