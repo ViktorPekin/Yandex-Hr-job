@@ -71,6 +71,7 @@
   align-items: center;
   min-height: 304px;
   position: relative;
+  background: var(--background);
 }
 
 .whatAwaitsYou__list {
