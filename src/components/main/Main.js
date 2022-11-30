@@ -13,9 +13,9 @@ import Practicum from './practicum/Practicum'
 const Main = () => {
   return (
     <main className='main'>
-      <Header />
+      {/*<Header />*/}
       <First />
-      <Practicum />
+      {/*<Practicum />
       <Tasks />
       <HowToBecome />
       <Advantages />
@@ -23,7 +23,7 @@ const Main = () => {
       <Vacancies />
       <NoWork />
       <Feedback />
-      <Footer />
+  <Footer />*/}
     </main>
   )
 }
