@@ -152,6 +152,15 @@
   color: var(--dark-gray);
 }
 
+.footer__copyright_text-ref {
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+.footer__copyright_text-ref:hover {
+  cursor: pointer;
+}
+
 .footer__copyright_copy {
   color: var(--black);
   padding: 0;
