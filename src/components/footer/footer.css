@@ -1,7 +1,6 @@
 @import url(../../vendor/fonts/stylesheet.css);
 @import url(../../utils/css-variables.css);
 
-
 .footer {
   padding: 80px 108px 96px 108px;
   background: var(--white);
@@ -15,8 +14,8 @@
   gap: 0px 0px;
   grid-auto-flow: row dense;
   grid-template-areas:
-    "footer__contacts footer__info footer__subscribe"
-    "footer__copyright footer__copyright footer__subscribe";
+    'footer__contacts footer__info footer__subscribe'
+    'footer__copyright footer__copyright footer__subscribe';
 }
 
 .footer__contacts {
@@ -52,7 +51,7 @@
   flex-grow: 0;
 }
 
-.footer__contacts_links{
+.footer__contacts_links {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -220,7 +219,6 @@
 }
 
 @media screen and (max-width: 1199.98px) {
-
   .footer__contacts_title {
     font-size: 28px;
     line-height: 114%;
@@ -240,8 +238,9 @@
 
   .footer__container {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: flex-start;
   }
 
@@ -253,10 +252,20 @@
 
   .footer__info {
     max-height: 160px;
+    order: 2;
+  }
+
+  .footer__contacts {
+    margin-right: 20px;
+    order: 1;
   }
 
   .footer__subscribe {
-    margin-top: 21px;
+    order: 3;
+  }
+
+  .footer__copyright {
+    order: 4;
   }
 
   .footer__contacts_links {
@@ -267,13 +276,36 @@
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__contacts {
+    margin: 32px 0 0 0;
+  }
+
+  .footer__info {
+    margin: 0 0 20px 0;
+  }
+
+  .footer__subscribe {
+    order: -1;
+  }
+}
+
 @media screen and (max-width: 549.98px) {
   .footer {
     padding: 32px 16px;
   }
-}
 
-@media screen and (max-width: 375px) {
+  .footer__container {
+    align-items: flex-start;
+  }
+
   .footer__subscribe {
     order: -1;
     margin-top: 0;
@@ -330,7 +362,7 @@
   }
 
   .footer__info {
-    margin-right: 0;
+    margin: 0;
     gap: 80px;
   }
 
@@ -354,4 +386,7 @@
     font-size: 12px;
     line-height: 133%;
   }
+}
+
+@media screen and (max-width: 375px) {
 }

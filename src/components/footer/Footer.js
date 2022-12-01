@@ -4,11 +4,6 @@ import logo from '../../images/logo-footer.svg'
 import logoMobile from '../../images/logo-header.png'
 
 const Footer = () => {
-  const scrollTo = () => {
-    const element = document.querySelector('#vacancies')
-    element.scrollIntoView()
-  }
-
   return (
     <footer className='footer'>
       <div className='footer__container'>
@@ -16,34 +11,54 @@ const Footer = () => {
           <h2 className='footer__contacts_title'>8-800-700-93-29</h2>
           <p className='footer__contacts_subtitle'>Звонок по России бесплатный</p>
           <nav className='footer__contacts_links'>
-            <a href='https://thecode.media/' className='footer__contacts_link' target='_blank'>
+            <a href='https://thecode.media/' className='footer__contacts_link' target='_blank' rel='noreferrer'>
               Журнал
             </a>
-            <a href='https://t.me/practicum_experts' className='footer__contacts_link' target='_blank'>
+            <a href='https://t.me/practicum_experts' className='footer__contacts_link' target='_blank' rel='noreferrer'>
               <img src={tmLogo} alt='Лого Телеграм'></img>
             </a>
-            <a href='https://vk.com/yandex.practicum' className='footer__contacts_link' target='_blank'>
+            <a
+              href='https://vk.com/yandex.practicum'
+              className='footer__contacts_link'
+              target='_blank'
+              rel='noreferrer'
+            >
               <img src={vkLogo} alt='Лого Вконтакте'></img>
             </a>
           </nav>
         </div>
         <div className='footer__info'>
           <nav className='footer__info_links'>
-            <a href='https://yandex.ru/support/praktikum/feedback.html' className='footer__info_link' target='_blank'>
+            <a
+              href='https://yandex.ru/support/praktikum/feedback.html'
+              className='footer__info_link'
+              target='_blank'
+              rel='noreferrer'
+            >
               Помощь
             </a>
-            <a href='https://code.s3.yandex.net/License%20YSDA.pdf' className='footer__info_link' target='_blank'>
+            <a
+              href='https://code.s3.yandex.net/License%20YSDA.pdf'
+              className='footer__info_link'
+              target='_blank'
+              rel='noreferrer'
+            >
               Лицензия
             </a>
-            <a href='https://practicum.yandex.ru/reviews' className='footer__info_link' target='_blank'>
+            <a
+              href='https://practicum.yandex.ru/reviews'
+              className='footer__info_link'
+              target='_blank'
+              rel='noreferrer'
+            >
               Отзывы
             </a>
           </nav>
           <nav className='footer__info_links'>
-            <a className='footer__info_link footer__info_link-desctop' onClick={() => scrollTo()} tabIndex='0'>
+            <a className='footer__info_link footer__info_link-desctop' href='#vacancies'>
               Открытые предложения
             </a>
-            <a className='footer__info_link footer__info_link-mobile' onClick={() => scrollTo()} tabIndex='0'>
+            <a className='footer__info_link footer__info_link-mobile' href='#vacancies'>
               Предложения
             </a>
             <a href='https://yandex.ru/legal/practicum_termsofuse/' className='footer__info_link'>
@@ -53,6 +68,7 @@ const Footer = () => {
               href='https://practicum.yandex.ru/employment/#comics-section'
               className='footer__info_link'
               target='_blank'
+              rel='noreferrer'
             >
               Для работодателей
             </a>
@@ -66,7 +82,12 @@ const Footer = () => {
           </p>
           <p className='footer__copyright_text'>
             Образовательные услуги оказываются АНО ДПО «ШАД». ШАД — это{' '}
-            <a href='https://academy.yandex.ru/dataschool/' className='footer__copyright_text-ref' target='_blank'>
+            <a
+              href='https://academy.yandex.ru/dataschool/'
+              className='footer__copyright_text-ref'
+              target='_blank'
+              rel='noreferrer'
+            >
               Школа анализа данных
             </a>
             , основанная Яндексом и оказывающая образовательные услуги на основании{' '}
@@ -74,6 +95,7 @@ const Footer = () => {
               href='https://code.s3.yandex.net/License%20YSDA.pdf'
               className='footer__copyright_text-ref'
               target='_blank'
+              rel='noreferrer'
             >
               Лицензии № 036031
             </a>{' '}
