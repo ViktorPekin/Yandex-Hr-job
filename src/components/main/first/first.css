@@ -1,4 +1,5 @@
 .first {
+  margin-top: 84px;
   position: relative;
   height: 700px;
   width: 100%;
@@ -345,6 +346,7 @@
 
 @media screen and (max-width: 550px) {
   .first {
+    margin-top: 68px;
     background-position: 61% 0;
   }
 
