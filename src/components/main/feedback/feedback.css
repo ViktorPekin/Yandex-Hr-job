@@ -29,6 +29,8 @@
   line-height: 26px;
   color: var(--blue);
   text-decoration: none;
+  border: none;
+  background-color: var(--background);
 }
 
 .feedback__button:hover {
