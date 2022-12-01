@@ -13,17 +13,17 @@ import Practicum from './practicum/Practicum'
 const Main = (props) => {
   return (
     <main className='main'>
-      {/*       <Header />
+      <Header />
       <First />
       <Practicum />
       <Tasks />
       <HowToBecome />
       <Advantages />
       <WhatAwaitsYou />
-      <Vacancies /> */}
+      <Vacancies />
       <NoWork onOpenPopup={props.onOpenPopup} />
-      {/*       <Feedback />
-      <Footer /> */}
+      <Feedback />
+      <Footer />
     </main>
   )
 }
