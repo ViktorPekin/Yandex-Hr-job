@@ -18,7 +18,7 @@ const WhatAwaitsYou = () => {
     ? 'whatAwaitsYou__item whatAwaitsYou__item_third thirdAnimation'
     : 'whatAwaitsYou__item whatAwaitsYou__item_third'
   return (
-    <section className='whatAwaitsYou' ref={ref}>
+    <section className='whatAwaitsYou' ref={ref} id='whatawaitsyou'>
       <h2 className={headerAnimation}>Что вас ждет?</h2>
       <ul className='whatAwaitsYou__list'>
         <li className={firstAnimation}>
