@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Yandex-Hr-job/static/css/main.efe5c27d.css",
-    "main.js": "/Yandex-Hr-job/static/js/main.582ef457.js",
+    "main.css": "/Yandex-Hr-job/static/css/main.b3caee1a.css",
+    "main.js": "/Yandex-Hr-job/static/js/main.9c4fde68.js",
     "static/media/background_first.png": "/Yandex-Hr-job/static/media/background_first.2fc8fa17f371e42fd411.png",
     "static/media/Photo1.jpg": "/Yandex-Hr-job/static/media/Photo1.9a3713a19576cae525b1.jpg",
     "static/media/YandexSansText-RegularItalic.eot": "/Yandex-Hr-job/static/media/YandexSansText-RegularItalic.8b47e91a40261bb8aca9.eot",
@@ -63,11 +63,11 @@
     "static/media/path120.svg": "/Yandex-Hr-job/static/media/path120.fe0803b3c16c53da1b8e.svg",
     "index.html": "/Yandex-Hr-job/index.html",
     "static/media/Arrow.svg": "/Yandex-Hr-job/static/media/Arrow.88fbcfc7c2746d7cac8a.svg",
-    "main.efe5c27d.css.map": "/Yandex-Hr-job/static/css/main.efe5c27d.css.map",
-    "main.582ef457.js.map": "/Yandex-Hr-job/static/js/main.582ef457.js.map"
+    "main.b3caee1a.css.map": "/Yandex-Hr-job/static/css/main.b3caee1a.css.map",
+    "main.9c4fde68.js.map": "/Yandex-Hr-job/static/js/main.9c4fde68.js.map"
   },
   "entrypoints": [
-    "static/css/main.efe5c27d.css",
-    "static/js/main.582ef457.js"
+    "static/css/main.b3caee1a.css",
+    "static/js/main.9c4fde68.js"
   ]
 }
