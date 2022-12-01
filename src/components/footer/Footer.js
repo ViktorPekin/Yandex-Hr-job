@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <div className='footer__info'>
           <nav className='footer__info_links'>
-            <a href='https://yandex.ru/support/praktikum/feedback.html' class='footer__info_link' target='_blank'>
+            <a href='https://yandex.ru/support/praktikum/feedback.html' className='footer__info_link' target='_blank'>
               Помощь
             </a>
             <a href='https://code.s3.yandex.net/License%20YSDA.pdf' className='footer__info_link' target='_blank'>

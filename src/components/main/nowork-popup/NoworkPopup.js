@@ -1,6 +1,5 @@
 import Iframe from 'react-iframe'
 import './nowork-popup.css'
-import embed from 'https://yastatic.net/s3/frontend/forms/_/embed.js'
 
 const NoworkPopup = (props) => {
   const popupClose = () => {
@@ -10,6 +9,7 @@ const NoworkPopup = (props) => {
     <section
       className={props.openPopup ? 'nowork-popup font_display nowork-popup_opened' : 'nowork-popup font_display'}
     >
+      <script src='https://yastatic.net/s3/frontend/forms/_/embed.js'></script>
       <div className='nowork-popup__container'>
         <button type='button' className='nowork-popup__button' onClick={popupClose}>
           Закрыть
