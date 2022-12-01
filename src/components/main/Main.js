@@ -10,20 +10,20 @@ import Feedback from './feedback/Feedback'
 import WhatAwaitsYou from './whatAwaitsYou/WhatAwaitsYou'
 import Practicum from './practicum/Practicum'
 
-const Main = () => {
+const Main = (props) => {
   return (
     <main className='main'>
-      <Header />
+      {/*       <Header />
       <First />
       <Practicum />
       <Tasks />
       <HowToBecome />
       <Advantages />
       <WhatAwaitsYou />
-      <Vacancies />
-      <NoWork />
-      <Feedback />
-      <Footer />
+      <Vacancies /> */}
+      <NoWork onOpenPopup={props.onOpenPopup} />
+      {/*       <Feedback />
+      <Footer /> */}
     </main>
   )
 }

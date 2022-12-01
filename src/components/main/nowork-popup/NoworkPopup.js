@@ -1,16 +1,27 @@
+import Iframe from 'react-iframe'
 import './nowork-popup.css'
+import embed from 'https://yastatic.net/s3/frontend/forms/_/embed.js'
 
 const NoworkPopup = (props) => {
   const popupClose = () => {
-    props.popupClose(false)
+    props.onOpenPopup(false)
   }
-
   return (
-    <div className={props.popupOpen ? 'nowork-popup font_display nowork-popup_opened' : 'nowork-popup font_display'}>
-      <button type='button' className='nowork-popup__button' onClick={popupClose}>
-        Закрыть
-      </button>
-    </div>
+    <section
+      className={props.openPopup ? 'nowork-popup font_display nowork-popup_opened' : 'nowork-popup font_display'}
+    >
+      <div className='nowork-popup__container'>
+        <button type='button' className='nowork-popup__button' onClick={popupClose}>
+          Закрыть
+        </button>
+        <h2 className='nowork-popup__title font_display'>Не нашли себя в открытых предложениях?</h2>
+        <Iframe
+          src='https://forms.yandex.ru/u/638601d75d2a0618e5ac9bb4/?iframe=1'
+          name='ya-form-638601d75d2a0618e5ac9bb4'
+          className='nowork-popup__form'
+        ></Iframe>
+      </div>
+    </section>
   )
 }
 
