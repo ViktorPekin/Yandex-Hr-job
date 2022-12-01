@@ -7,7 +7,11 @@ const NoworkPopup = (props) => {
   }
   return (
     <section
-      className={props.openPopup ? 'nowork-popup font_display nowork-popup_opened' : 'nowork-popup font_display'}
+      className={
+        props.openPopup
+          ? 'nowork-popup font_display nowork-popup_opened app_overflow-hidden'
+          : 'nowork-popup font_display'
+      }
     >
       <script src='https://yastatic.net/s3/frontend/forms/_/embed.js'></script>
       <div className='nowork-popup__container'>

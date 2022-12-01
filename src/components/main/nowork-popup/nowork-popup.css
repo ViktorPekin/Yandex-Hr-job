@@ -57,7 +57,7 @@
 
 .nowork-popup__button:hover {
   cursor: pointer;
-  opacity: 0.8;
+  color: var(--blue-hover);
 }
 
 .nowork-popup__title {

@@ -45,8 +45,8 @@
 }
 
 .no-work__button:hover {
-  opacity: 0.8;
   cursor: pointer;
+  background-color: var(--blue-hover);
 }
 
 .no-work__img {
@@ -60,6 +60,10 @@
 }
 
 @media screen and (max-width: 1439.98px) {
+  .no-work {
+    align-items: center;
+  }
+
   .no-work__img {
     display: none;
   }
@@ -68,6 +72,14 @@
 @media screen and (max-width: 1023.98px) {
   .no-work {
     padding: 52px 50px 52px 50px;
+  }
+
+  .no-work__title {
+    text-align: center;
+  }
+
+  .no-work__text {
+    text-align: center;
   }
 }
 
@@ -90,7 +102,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    text-align: center;
   }
 
   .no-work__button {

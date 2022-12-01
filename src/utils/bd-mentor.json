@@ -194,7 +194,7 @@
       "new": "false",
       "profession": "Ревьюер",
       "well": "Курс «Веб-разработчик»",
-      "salary": "",
+      "salary": "В среднем 30000 ₽ в месяц",
       "info": ["Веб-разработчик со стажем от 1,5 лет.", "Владеете версткой, JavaScript, React, Node.js или NestJS."],
       "link": "https://practicum.yandex.ru/job/vacancy-8"
     },
@@ -291,7 +291,7 @@
       "new": "true",
       "profession": "Ревьюер",
       "well": "Курс «iOS-разработчик»",
-      "salary": "",
+      "salary": "В среднем 40000 ₽ в месяц",
       "info": [
         "Опыт разработки мобильных приложения для iOS от 1 года.",
         "Понимаете, что такое Git, Swift, FireBase, Atlassian Jira."
@@ -303,7 +303,7 @@
       "new": "true",
       "profession": "Ревьюер",
       "well": "Курс «Android-разработчик»",
-      "salary": "",
+      "salary": "В среднем 40000 ₽ в месяц",
       "info": [
         "Опыт разработки приложений для Android от 1 года.",
         "Понимаете, что такое Git, Computer science, SOLID, Android SDK."
