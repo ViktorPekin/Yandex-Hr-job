@@ -24,7 +24,7 @@ const HowToBecome = () => {
   }
 
   return (
-    <section className='howToBecome' ref={ref}>
+    <section className='howToBecome' ref={ref} id='howtobecome'>
       <h2 className={headerAnimation}>Как стать экспертом?</h2>
       <div className='howToBecome__list-wrapper'>
         <ul className='howToBecome__list'>

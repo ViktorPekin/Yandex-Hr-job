@@ -67,6 +67,7 @@
 }
 
 .first__bable {
+  text-decoration: none;
   position: absolute;
   display: flex;
   flex-direction: row;
