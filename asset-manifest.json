@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Yandex-Hr-job/static/css/main.7edac2c7.css",
-    "main.js": "/Yandex-Hr-job/static/js/main.837252fa.js",
+    "main.css": "/Yandex-Hr-job/static/css/main.b0441b41.css",
+    "main.js": "/Yandex-Hr-job/static/js/main.5da7f373.js",
     "static/media/background_first.png": "/Yandex-Hr-job/static/media/background_first.2fc8fa17f371e42fd411.png",
     "static/media/background_first_small.png": "/Yandex-Hr-job/static/media/background_first_small.5aa024efe93276cb8396.png",
     "static/media/Photo1.jpg": "/Yandex-Hr-job/static/media/Photo1.9a3713a19576cae525b1.jpg",
@@ -57,18 +57,18 @@
     "static/media/Icon_rocket.svg": "/Yandex-Hr-job/static/media/Icon_rocket.e6e00f36c024e8c705fe6c776c309c41.svg",
     "static/media/Icon_change.svg": "/Yandex-Hr-job/static/media/Icon_change.2b3d536dfcba97f5f6b065abd1f5fe6b.svg",
     "static/media/vk.svg": "/Yandex-Hr-job/static/media/vk.85c08988c1a9843ef05c5de739f59ce8.svg",
-    "static/media/ellipse1238.svg": "/Yandex-Hr-job/static/media/ellipse1238.ae37fbaa7c15b1ec16a4.svg",
     "static/media/Icon_education.svg": "/Yandex-Hr-job/static/media/Icon_education.a28f00bc3e87f90407812d1095072d8d.svg",
-    "static/media/logoFeedback.svg": "/Yandex-Hr-job/static/media/logoFeedback.ceab7365379fe2223af2cdc9d722791a.svg",
+    "static/media/logoFeedback.svg": "/Yandex-Hr-job/static/media/logoFeedback.b33a8ee0f8ef0faeb3917aa1282bb907.svg",
     "static/media/Icon_stairs.svg": "/Yandex-Hr-job/static/media/Icon_stairs.615888f108d101f316acca3f3d32851e.svg",
     "static/media/tm.svg": "/Yandex-Hr-job/static/media/tm.19bcc0bde097c28a6a0ef1a4eb197214.svg",
+    "static/media/path120.svg": "/Yandex-Hr-job/static/media/path120.2c97a4c186b4f654c09b.svg",
     "index.html": "/Yandex-Hr-job/index.html",
-    "static/media/Arrow.svg": "/Yandex-Hr-job/static/media/Arrow.b8ab8cde49c41116bb5f.svg",
-    "main.7edac2c7.css.map": "/Yandex-Hr-job/static/css/main.7edac2c7.css.map",
-    "main.837252fa.js.map": "/Yandex-Hr-job/static/js/main.837252fa.js.map"
+    "static/media/Arrow.svg": "/Yandex-Hr-job/static/media/Arrow.88fbcfc7c2746d7cac8a.svg",
+    "main.b0441b41.css.map": "/Yandex-Hr-job/static/css/main.b0441b41.css.map",
+    "main.5da7f373.js.map": "/Yandex-Hr-job/static/js/main.5da7f373.js.map"
   },
   "entrypoints": [
-    "static/css/main.7edac2c7.css",
-    "static/js/main.837252fa.js"
+    "static/css/main.b0441b41.css",
+    "static/js/main.5da7f373.js"
   ]
 }
