@@ -1,0 +1,236 @@
+.vacancies {
+  padding: 80px 108px 80px 108px;
+  background-color: var(--background);
+  min-height: 100px;
+}
+
+.vacancies__title {
+  margin: 0 0 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: var(--black);
+}
+
+.vacancies__job-container {
+  padding: 0;
+  margin: 0 0 14px 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.vacancies__job {
+  background-color: #fff;
+  padding: 10px 24px 10px 16px;
+  border-radius: 8px 0px 0px 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--dark-gray);
+}
+
+.vacancies__job:hover {
+  cursor: pointer;
+}
+
+.vacancies__job_active {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.vacancies__job:last-child {
+  padding: 10px 16px 10px 24px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.vacancies__direction-container {
+  padding: 0;
+  margin: 0 0 36px 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.vacancies__direction {
+  margin-right: 20px;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--dark-gray);
+}
+
+.vacancies__direction_active {
+  font-weight: 500;
+  color: var(--black);
+}
+
+.vacancies__direction:hover {
+  cursor: pointer;
+}
+
+.vacancies__container {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(220px, max-content);
+  grid-auto-rows: minmax(220px, max-content);
+  gap: 24px;
+  justify-content: center;
+}
+
+.vacancies__not-vacancy-text {
+  margin: 10px 0 0 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.vacancies__button {
+  margin: 28px 0 0 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 122%;
+  color: var(--blue);
+}
+
+.vacancies__button:hover {
+  cursor: pointer;
+  color: var(--blue-hover);
+}
+
+.vacancies__button_hidden {
+  display: none;
+}
+
+.vacancies__block-direction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.vacancies__new-vacancy {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.vacancies__new-vacancy-logo {
+  margin-right: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 90%;
+  background-color: var(--blue);
+}
+
+.vacancies__new-vacancy-text {
+  margin: 0;
+  width: 176px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .vacancies {
+    padding: 50px 50px 50px 50px;
+  }
+  .vacancies__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .vacancies__direction-container {
+    margin: 0 0 12px 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .vacancies__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(164px, max-content);
+    grid-auto-rows: minmax(164px, max-content);
+  }
+  .vacancies__block-direction {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .vacancies__new-vacancy {
+    margin-bottom: 23px;
+  }
+}
+
+@media screen and (max-width: 549.98px) {
+  .vacancies {
+    padding: 32px 16px 32px 16px;
+  }
+
+  .vacancies__title {
+    margin: 0 0 24px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .vacancies__job-container {
+    margin: 0 0 16px 0;
+  }
+
+  .vacancies__job {
+    padding: 8px 14px 8px 14px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .vacancies__job:last-child {
+    padding: 8px 14px 8px 14px;
+  }
+
+  .vacancies__direction {
+    margin-right: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .vacancies__new-vacancy {
+    margin-top: 28px;
+  }
+
+  .vacancies__new-vacancy-logo {
+    margin-right: 8px;
+    width: 12.8px;
+    height: 12.8px;
+  }
+
+  .vacancies__new-vacancy-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .vacancies__button {
+    margin: 24px 0 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
