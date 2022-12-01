@@ -53,10 +53,7 @@ const HowToBecome = () => {
           </li>
         </ul>
         <button type='button' className={buttonAnimation} onClick={() => scrollTo()}>
-          <span className='howToBecome__button_connect'>
-            Присоединиться <br />к команде
-          </span>
-          <span className='howToBecome__button_form'>Заполнить форму</span>
+          Присоединиться к команде
         </button>
       </div>
     </section>

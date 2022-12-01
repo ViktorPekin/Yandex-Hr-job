@@ -76,8 +76,15 @@
 
 .footer__contacts_link:hover {
   cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 1s ease-in-out;
+}
+
+.footer__contacts_link::after {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
 }
 
 .footer__info {
@@ -116,9 +123,16 @@
 
 .footer__info_link:hover {
   cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 1s ease-in-out;
 }
+.footer__info_link::after {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+}
+
 .footer__info_link-desctop {
   margin: 0;
   padding: 0;
@@ -158,6 +172,15 @@
 
 .footer__copyright_text-ref:hover {
   cursor: pointer;
+}
+
+.footer__copyright_text-ref::after {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
 }
 
 .footer__copyright_copy {
@@ -215,7 +238,6 @@
 .footer__subscribe_button:hover {
   cursor: pointer;
   background: var(--blue-hover);
-  transition: 1s ease-in-out;
 }
 
 @media screen and (max-width: 1199.98px) {
