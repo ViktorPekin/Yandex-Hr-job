@@ -28,7 +28,7 @@ const First = () => {
     <article className='first_container'>
       <h1 className='first__title font_display'>{useWidthDesctop.winWidth > 375 ? 'Ищем ревьюеров и наставников в Практикум' : 'Ищем ревьюеров и наставников в Яндекс Практикум' }</h1>
       <p className='first__text'>Стань нашим экспертом! Делись своим опытом и знаниями.</p>
-      <button type='button' className='first__button'>Посмотреть предложения</button>
+      <a href='#vacancies' className='first__link'>Посмотреть предложения</a>
     </article>
     <div className={useWidthDesctop.winWidth <= 880 ? 'first__bable first__bable_color_blue first__bable_pozition_one' : 'first__bable first__bable_pozition_one'} style={animation ? { animationPlayState: 'running' } : { animationPlayState: 'paused' }} onMouseOver={animationManagementStop} onMouseLeave={animationManagementStart}>
       <p className='first__bable-text'>Делись знаниями в&nbsp;программировании</p>
