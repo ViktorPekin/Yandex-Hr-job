@@ -65,6 +65,7 @@
   line-height: 28px;
   border-radius: 0 0 50% 50% / 0 0 100% 100%;
   height: 111px;
+  color: var(--black);
 }
 
 .practicum__text:nth-child(2n + 1) .practicum__text-bottom {
@@ -96,7 +97,7 @@
   left: 0;
   width: 222px;
   height: 222px;
-  background: center/contain no-repeat url(../../../images/path120.svg);
+  background: center/contain no-repeat url(../../../images/ellipse1238.svg);
 }
 
 .practicum__text-content {
@@ -115,6 +116,7 @@
 
 .practicum__link:hover {
   cursor: pointer;
+  color: var(--blue-hover);
 }
 
 @media screen and (max-width: 1023.98px) {

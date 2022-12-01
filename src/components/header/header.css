@@ -36,6 +36,10 @@
   text-decoration: none;
 }
 
+.header__link:hover {
+  font-weight: 500;
+}
+
 .header__link:last-child {
   margin-right: 0;
 }
@@ -59,6 +63,11 @@
   text-decoration: none;
 }
 
+.header__link-border:hover {
+  border: 2px solid var(--blue-hover);
+  color: var(--blue-hover);
+}
+
 @media screen and (max-width: 1199.98px) {
   .header__link {
     margin-right: 30px;
@@ -72,6 +81,7 @@
 @media screen and (max-width: 1023.98px) {
   .header {
     padding: 0 50px;
+    width: calc(100% - 50px - 50px);
   }
   .header__link {
     display: none;
@@ -81,6 +91,7 @@
 @media screen and (max-width: 549.98px) {
   .header {
     padding: 0 16px;
+    width: calc(100% - 16px - 16px);
     min-height: 68px;
   }
   .header__link {
