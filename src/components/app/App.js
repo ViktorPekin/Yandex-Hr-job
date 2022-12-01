@@ -1,16 +1,14 @@
-import { Route, Routes } from 'react-router-dom'
+import { useState } from 'react'
 import Main from '../main/Main'
-import VacancyInfo from '../vacancy-info/VacancyInfo'
-import NotFound from '../not-found/NotFound'
+import NoworkPopup from '../main/nowork-popup/NoworkPopup'
 
 const App = () => {
+  const [openPopup, setOpenPopup] = useState(false)
+
   return (
     <div className='app'>
-      <Routes>
-        <Route path='/' element={<Main />} />
-        <Route path='/vacancy' element={<VacancyInfo />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
+      <Main onOpenPopup={setOpenPopup} />
+      <NoworkPopup openPopup={openPopup} onOpenPopup={setOpenPopup} />
     </div>
   )
 }
