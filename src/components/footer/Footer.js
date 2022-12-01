@@ -11,7 +11,13 @@ const Footer = () => {
           <h2 className='footer__contacts_title'>8-800-700-93-29</h2>
           <p className='footer__contacts_subtitle'>Звонок по России бесплатный</p>
           <nav className='footer__contacts_links'>
-            <a href='https://thecode.media/' className='footer__contacts_link' target='_blank' rel='noreferrer'>
+            <a
+              href='https://thecode.media/'
+              className='footer__contacts_link'
+              target='_blank'
+              rel='noreferrer'
+              title='Журнал'
+            >
               Журнал
             </a>
             <a href='https://t.me/practicum_experts' className='footer__contacts_link' target='_blank' rel='noreferrer'>
@@ -34,6 +40,7 @@ const Footer = () => {
               className='footer__info_link'
               target='_blank'
               rel='noreferrer'
+              title='Помощь'
             >
               Помощь
             </a>
@@ -42,6 +49,7 @@ const Footer = () => {
               className='footer__info_link'
               target='_blank'
               rel='noreferrer'
+              title='Лицензия'
             >
               Лицензия
             </a>
@@ -50,18 +58,23 @@ const Footer = () => {
               className='footer__info_link'
               target='_blank'
               rel='noreferrer'
+              title='Отзывы'
             >
               Отзывы
             </a>
           </nav>
           <nav className='footer__info_links'>
-            <a className='footer__info_link footer__info_link-desctop' href='#vacancies'>
+            <a className='footer__info_link footer__info_link-desctop' href='#vacancies' title='Открытые предложения'>
               Открытые предложения
             </a>
-            <a className='footer__info_link footer__info_link-mobile' href='#vacancies'>
+            <a className='footer__info_link footer__info_link-mobile' href='#vacancies' title='Предложения'>
               Предложения
             </a>
-            <a href='https://yandex.ru/legal/practicum_termsofuse/' className='footer__info_link'>
+            <a
+              href='https://yandex.ru/legal/practicum_termsofuse/'
+              className='footer__info_link'
+              title='Правовая помощь'
+            >
               Правовая помощь
             </a>
             <a
@@ -69,6 +82,7 @@ const Footer = () => {
               className='footer__info_link'
               target='_blank'
               rel='noreferrer'
+              title='Для работодателей'
             >
               Для работодателей
             </a>
@@ -87,9 +101,10 @@ const Footer = () => {
               className='footer__copyright_text-ref'
               target='_blank'
               rel='noreferrer'
+              title='Школа анализа данных'
             >
               Школа анализа данных
-            </a>
+            </a>{' '}
             , основанная Яндексом и оказывающая образовательные услуги на основании{' '}
             <a
               href='https://code.s3.yandex.net/License%20YSDA.pdf'
@@ -98,7 +113,7 @@ const Footer = () => {
               rel='noreferrer'
             >
               Лицензии № 036031
-            </a>{' '}
+            </a>
             от 24 марта 2015 года.
           </p>
           <p className='footer__copyright_text'>
@@ -108,12 +123,28 @@ const Footer = () => {
           <p className='footer__copyright_copy'>©{new Date().getFullYear()} АНО ДПО «ШАД», ООО «Яндекс»</p>
         </div>
         <div className='footer__subscribe'>
-          <img src={logo} className='footer__subscribe_logo' alt='Лого Яндекс Практикум'></img>
-          <img src={logoMobile} className='footer__subscribe_logoMobile' alt='Лого Яндекс Практикум'></img>
+          <a href='https://practicum.yandex.ru/' target='_blank'>
+            <img
+              src={logo}
+              className='footer__subscribe_logo'
+              alt='Лого Яндекс Практикум'
+              rel='noreferrer'
+              target='_blank'
+            ></img>
+          </a>
+          <a href='https://practicum.yandex.ru/' target='_blank'>
+            <img
+              src={logoMobile}
+              className='footer__subscribe_logoMobile'
+              alt='Лого Яндекс Практикум'
+              rel='noreferrer'
+              target='_blank'
+            ></img>
+          </a>
           <p className='footer__subscribe_text'>
             Подпишитесь на наш канал в Telegram, чтобы узнавать о новых вакансиях.
           </p>
-          <form action='https://t.me/practicum_experts' target='_blank'>
+          <form action='https://t.me/practicum_experts' rel='noreferrer' target='_blank'>
             <button className='footer__subscribe_button' tabIndex='0'>
               Подписаться на канал
             </button>

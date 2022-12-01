@@ -27,18 +27,18 @@ const WhatAwaitsYou = () => {
           <b>≈ 50 человек</b>
             <br /> в группе
             </span>
-            <span className='whatAwaitsYou__context_mobile1'>≈ 50 человек в группе</span>
+            <span className='whatAwaitsYou__context_mobile1'><b>≈ 50 человек</b> в группе</span>
 
           </p>
         </li>
         <li className={secondAnimation}>
           <p className='whatAwaitsYou__context'>
             <span className='whatAwaitsYou__context_desc2'>
-              <b>2-3</b> часа в день,
+              <b>2-3 часа</b> в день,
               <br />
               можно удаленно
             </span>
-            <span className='whatAwaitsYou__context_mobile2'>2-3 часа в день, можно удаленно</span>
+            <span className='whatAwaitsYou__context_mobile2'><b>2-3 часа</b> в день, можно удаленно</span>
           </p>
         </li>
         <li className={thirdAnimation}>
@@ -47,7 +47,7 @@ const WhatAwaitsYou = () => {
               <b>35 — 55000 ₽</b> доход <br />
               в месяц
             </span>
-            <span className='whatAwaitsYou__context_mobile3'>35 — 55000 ₽ доход в месяц</span>
+            <span className='whatAwaitsYou__context_mobile3'><b>35 — 55000 ₽</b> доход в месяц</span>
           </p>
         </li>
       </ul>
