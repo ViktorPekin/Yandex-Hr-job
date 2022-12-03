@@ -1,0 +1,9 @@
+.app {
+  font-family: 'Yandex Sans Text', Arial, sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
